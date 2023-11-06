@@ -1,0 +1,137 @@
+ *{
+    background: #D0D4D5;
+ }
+ .card{
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+#food{
+    display: flex;
+    justify-content: space-evenly;
+}
+#food p {
+    animation:slideP 1s ease forwards ;
+    opacity: 0;
+    transition-delay: 1.10s;
+}
+#food h3 {
+    animation:slideh3 1s ease forwards ;
+    text-align: center;
+    opacity: 0;
+    transition-delay: 1.9s;
+}
+span{
+    color: red;
+}
+.head{
+    animation:slideBottom 1s ease forwards ;
+    opacity: 0;
+    transition-delay: 1s;
+    text-align: center;
+}
+.card img{
+    animation:slideimg 1s ease forwards ;
+    opacity: 0;
+    transition-delay: 1.6s
+}
+/* @media(max-width:700px){
+    #food{
+        flex-wrap: wrap;
+        text-align: center;
+        
+       
+    }
+    .head {
+        text-align: center;
+        font-weight: 1000;
+        text-decoration: none;
+        animation:slideBottom 1s ease forwards ;
+        opacity: 0;
+        
+    } */
+     @keyframes slideBottom {
+       0%{
+        transform: translateY(-100px)  ; /* rotate(60deg) */
+        opacity: 0;
+       }
+       100%{
+        transform: translate(0);
+        opacity: 1;
+       }
+
+        
+    }
+    @keyframes slideimg {
+        0%{
+         transform: translate(100px);
+         opacity: 0;
+        }
+        100%{
+         transform: translate(0);
+         opacity: 1;
+        }
+ 
+         
+     }
+    @keyframes slideh3 {
+        0%{
+         transform: translateX(-100px);
+         opacity: 0;
+        }
+        100%{
+         transform: translate(0);
+         opacity: 1;
+        }
+ 
+         
+     }
+    @keyframes slideP {
+        0%{
+         transform: translateY(100px);
+         opacity: 0;
+        }
+        100%{
+         transform: translate(0);
+         opacity: 1;
+        }
+ 
+         
+     }
+    
+
+
+
+/* @media(min-width:700px){
+    .head{
+       
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+} */
+    /* @keyframes head {
+        from{transform: translate(20px);
+        color: rgb(249, 100, 7);
+        
+    }
+        to{transform: translate(1000px);}
+        
+    }
+} */
+/* @media(max-width:820px){
+    #food{
+        flex-wrap: wrap;
+    }
+} */
+@media(min-width:412px){
+   #food{
+    flex-wrap:wrap;
+   } 
+}
